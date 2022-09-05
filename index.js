@@ -11,7 +11,7 @@ if (!process.env.TOKEN){
     global.config = {'token': config.token, 'prefix': config.prefix};
   } catch (e){
     console.error("No config file found, create it or use environnement variables.");
-    process.exit(1);
+    process.exit(1);            
   };
 } else{
   if (!process.env.PREFIX) process.env.PREFIX=">";
